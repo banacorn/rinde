@@ -1,2 +1,1 @@
-rinde
-=====
+das ist rinde
