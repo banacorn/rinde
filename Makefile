@@ -37,6 +37,11 @@ build:
 	@echo "Thanks for using Bootstrap,"
 	@echo "<3 @mdo and @fat\n"
 
+buildcss:
+	@./node_modules/.bin/recess --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
+	@echo "Compiling LESS with Recess...               ${CHECK} Done"
+
+
 #
 # RUN JSHINT & QUNIT TESTS IN PHANTOMJS
 #
@@ -119,7 +124,7 @@ gh-pages: bootstrap docs
 
 watch:
 	echo "Watching less files..."; \
-	watchr -e "watch('less/.*\.less') { system 'make' }"
+	watchr -e "watch('less/.*\.less') { system 'make buildcss' }"
 
 
 .PHONY: docs watch gh-pages bootstrap-img bootstrap-css bootstrap-js
