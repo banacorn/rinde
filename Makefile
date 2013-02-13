@@ -1,4 +1,4 @@
-BOOTSTRAP = ./docs/assets/css/bootstrap.css
+BOOTSTRAP = ./../cedar/stylesheets/bootstrap.css
 BOOTSTRAP_LESS = ./less/bootstrap.less
 BOOTSTRAP_RESPONSIVE = ./docs/assets/css/bootstrap-responsive.css
 BOOTSTRAP_RESPONSIVE_LESS = ./less/responsive.less
@@ -10,7 +10,6 @@ HR=\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\
 #
 # BUILD DOCS
 #
-
 build:
 	@echo "\n${HR}"
 	@echo "Building Bootstrap..."
