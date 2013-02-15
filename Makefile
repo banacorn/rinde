@@ -1,4 +1,4 @@
-BOOTSTRAP = ./docs/assets/css/bootstrap.css
+BOOTSTRAP = ./../cedar/stylesheets/bootstrap.css
 BOOTSTRAP_LESS = ./less/bootstrap.less
 BOOTSTRAP_RESPONSIVE = ./docs/assets/css/bootstrap-responsive.css
 BOOTSTRAP_RESPONSIVE_LESS = ./less/responsive.less
@@ -37,6 +37,11 @@ build:
 	@echo "${HR}\n"
 	@echo "Thanks for using Bootstrap,"
 	@echo "<3 @mdo and @fat\n"
+
+quickbuild:
+	@./node_modules/.bin/recess --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
+	@echo "Compiling LESS with Recess...               ${CHECK} Done"
+
 
 #
 # RUN JSHINT & QUNIT TESTS IN PHANTOMJS
