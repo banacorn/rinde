@@ -125,7 +125,7 @@ gh-pages: bootstrap docs
 
 watch:
 	echo "Watching less files..."; \
-	watchr -e "watch('less/.*\.less') { system 'make' }"
+	watchr -e "watch('less/.*\.less') { system 'make quickbuild' }"
 
 
 .PHONY: docs watch gh-pages bootstrap-img bootstrap-css bootstrap-js
