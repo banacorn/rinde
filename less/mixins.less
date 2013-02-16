@@ -729,3 +729,15 @@
     background-color: darken(@endColor, 10%) e("\9");
   }
 }
+
+
+/////////////////////////////////////
+//  OVERRIDE
+/////////////////////////////////////
+
+// Drop shadows
+.box-shadow() {
+  -webkit-box-shadow: @arguments;
+     -moz-box-shadow: @arguments;
+          box-shadow: @arguments;
+}

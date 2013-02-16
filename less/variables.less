@@ -306,7 +306,8 @@
 
 // Accent colors
 // -------------------------
-@blue:  #345;
+@blue: #345;
+@gold: darken(gold, 5%);
 
 // Navbar
 // -------------------------
@@ -315,9 +316,22 @@
 
 // Buttons
 // -------------------------
-@btnBackground:                     @white;
-@btnBackgroundHighlight:            darken(@white, 10%);
-@btnBorder:                         #ccc;
+@btnBackground:                     @blue;
+@btnBackgroundHighlight:            lighten(@btnBackground, 10%);
 
-@btnPrimaryBackground:              @blue;
-@btnPrimaryBackgroundHighlight:     darken(@btnPrimaryBackground, 10%);
+@btnPrimaryBackground:              @gold;
+@btnPrimaryBackgroundHighlight:     lighten(@btnPrimaryBackground, 10%);
+
+
+// Component sizing
+// -------------------------
+// Based on 14px font-size and 20px line-height
+
+@fontSizeExtraLarge:         @baseFontSize * 1.6; // ~18px
+
+@paddingExtraLarge:          16px 28px; // 44px
+
+
+// Forms
+// -------------------------
+// @inputBackground:               @grayLighter;

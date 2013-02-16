@@ -235,5 +235,23 @@ input[type="submit"].btn {
 
 // Core
 .btn {
+  .buttonBackground(@btnBackground, @btnBackgroundHighlight, @white, 0 1px 1px rgba(255,255,255,.75));
   border: none;
+}
+
+// Set the backgrounds
+// -------------------------
+.btn-primary {
+  .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
+}
+
+
+// Button Sizes
+// --------------------------------------------------
+
+// Extra-Large
+.btn-extra-large {
+  padding: @paddingExtraLarge;
+  font-size: @fontSizeExtraLarge;
+  .border-radius(@borderRadiusLarge);
 }
