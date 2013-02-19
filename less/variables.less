@@ -14,14 +14,15 @@
 @grayDark:              #333;
 @gray:                  #555;
 @grayLight:             #999;
-@grayLighter:           #eee;
+@grayLighter:           #f8f8f8;
 @white:                 #fff;
 
 
 // Accent colors
 // -------------------------
-@blue:                  #049cdb;
-@blueDark:              #0064cd;
+@blue:                  #345;
+// @blue:                  #049cdb;
+@blueDark:              darken(@blue, 10%);
 @green:                 #46a546;
 @red:                   #9d261d;
 @yellow:                #ffc40d;
@@ -181,12 +182,16 @@
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    40px;
-@navbarBackgroundHighlight:       #ffffff;
-@navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
+@navbarBackgroundHighlight:       lighten(@blue, 5%);
+// @navbarBackgroundHighlight:       #ffffff;
+@navbarBackground: @blue;
+// @navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
 @navbarBorder:                    darken(@navbarBackground, 12%);
 
-@navbarText:                      #777;
-@navbarLinkColor:                 #777;
+@navbarText:                      @grayLighter;
+@navbarLinkColor:                 @grayLighter;
+// @navbarText:                      #777;
+// @navbarLinkColor:                 #777;
 @navbarLinkColorHover:            @grayDark;
 @navbarLinkColorActive:           @gray;
 @navbarLinkBackgroundHover:       transparent;
@@ -223,7 +228,8 @@
 
 // Hero unit
 // -------------------------
-@heroUnitBackground:              @grayLighter;
+@heroUnitBackground:              @white;
+
 @heroUnitHeadingColor:            inherit;
 @heroUnitLeadColor:               inherit;
 
